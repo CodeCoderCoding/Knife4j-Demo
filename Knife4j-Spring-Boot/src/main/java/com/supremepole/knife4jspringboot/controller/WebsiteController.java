@@ -11,11 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author CodeCoderCoding
  */
-@Api(tags = "Hello")
+@Api(tags = "Website")
 @RestController
-@RequestMapping("/hello")
-public class HelloController {
-
+@RequestMapping("/website")
+public class WebsiteController {
     @ApiOperation(value = "问好")
     @GetMapping("/sayHi")
     public ResponseEntity<String> sayHi(@RequestParam("name")String name){
